@@ -35,7 +35,7 @@ export function Products() {
     },
   ]
   return (
-    <section id="products" className="mx-auto max-w-6xl px-4 py-16">
+    <section id="products" className="mx-auto max-w-6xl px-4 py-16 pt-24">
       <h2 className="text-balance text-2xl md:text-3xl font-semibold tracking-tight">
         DevOps platforms you can run anywhere
       </h2>

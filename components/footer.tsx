@@ -13,7 +13,7 @@ export function Footer() {
           <a href="#mirador" className="hover:underline">
             Mirador-Core
           </a>
-          <a href="#cta" className="hover:underline">
+          <a href="#contact-us" className="hover:underline">
             Contact
           </a>
         </nav>

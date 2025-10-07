@@ -20,7 +20,7 @@ export function Features() {
     },
   ]
   return (
-    <section id="mission" className="mx-auto max-w-6xl px-4 py-16">
+    <section id="mission" className="mx-auto max-w-6xl px-4 py-16 pt-24">
       <div className="max-w-2xl">
         <h2 className="text-balance text-2xl md:text-3xl font-semibold tracking-tight">
           Mission-driven platforms for modern operators

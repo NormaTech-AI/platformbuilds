@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import ContactForm from "@/components/contact-us"
+import CollaborationSection from "@/components/collaboration"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Products } from "@/components/products"
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Features />
       <Products />
       <MiradorHighlight />
+      <CollaborationSection />
       <ContactForm />
       <CTA />
       <Footer />
@@ -50,7 +52,7 @@ function HeaderNav() {
           <a href="#mirador" className="hover:underline">
             Mirador-Core
           </a>
-          <a href="#cta" className="hover:underline">
+          <a href="#contact-us" className="hover:underline">
             Contact
           </a>
         </nav>
@@ -61,7 +63,7 @@ function HeaderNav() {
             </Link>
           </Button>
           <Button asChild size="sm">
-            <Link href="#cta">Talk to us</Link>
+            <Link href="#contact-us">Talk to us</Link>
           </Button>
         </div>
       </div>

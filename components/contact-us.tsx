@@ -44,10 +44,11 @@ export default function ContactForm({ className }: { className?: string }) {
   }
 
   return (
+    <>
+      <div id="contact-us" className="mb-24 -mt-24"></div>
     <section
-      id="contact"
       aria-labelledby="contact-heading"
-      className={cn("mx-auto w-full max-w-2xl rounded-lg border p-6 md:p-8", className)}
+      className={cn("mx-auto max-w-2xl rounded-lg md:border p-6 md:p-8 container", className)}
     >
       <h2 id="contact-heading" className="text-balance text-2xl font-semibold tracking-tight">
         Contact Us
@@ -85,5 +86,6 @@ export default function ContactForm({ className }: { className?: string }) {
         </div>
       </form>
     </section>
+    </>
   )
 }
