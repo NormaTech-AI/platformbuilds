@@ -6,31 +6,31 @@ export function Products() {
     {
       name: "MiradorStack",
       tagline: "Unified metrics, logs, traces",
-      desc: "Unified observability for metrics, logs, and traces with native OpenTelemetry pipelines and fast VictoriaMetrics storage. Delivers real‑time dashboards, alerting, and AI‑assisted triage to cut MTTR, with enterprise SSO/RBAC and multi‑cluster support.",
+      desc: "Unified observability for metrics, logs, and traces with native OpenTelemetry pipelines and fast VictoriaMetrics storage. Delivers real-time dashboards, alerting, and AI-assisted triage to cut MTTR, with enterprise SSO/RBAC and multi-cluster support.",
       tags: ["Observability", "OpenTelemetry", "VM"],
     },
     {
       name: "Cosmolet",
       tagline: "Network fusion for K8s + bare metal",
-      desc: "Unifies Kubernetes and bare‑metal networks with policy‑based BGP routing and multi‑cluster overlays. Built for high‑throughput, low‑latency workloads in regulated and on‑prem environments.",
+      desc: "Unifies Kubernetes and bare-metal networks with policy-based BGP routing and multi-cluster overlays. Built for high-throughput, low-latency workloads in regulated and on-prem environments.",
       tags: ["Networking", "Kubernetes", "BGP"],
     },
     {
       name: "Telegen",
       tagline: "One agent, many signals",
-      desc: "Lightweight eBPF agent capturing system, process, and network signals with near‑zero overhead. Exposes Prometheus and OTLP for drop‑in integration with existing observability and security pipelines.",
+      desc: "Lightweight eBPF agent capturing system, process, and network signals with near-zero overhead. Exposes Prometheus and OTLP for drop-in integration with existing observability and security pipelines.",
       tags: ["eBPF", "Agent", "OTLP"],
     },
     {
-      name: "Telegen‑Sonic",
+      name: "Telegen-Sonic",
       tagline: "Observability for SONiC NOS",
-      desc: "Targeted observability for SONiC using eBPF tc‑ingress hooks. Streams enriched flow data over OTLP, with optional ERSPAN helpers for deeper packet insights.",
+      desc: "Targeted observability for SONiC using eBPF tc-ingress hooks. Streams enriched flow data over OTLP, with optional ERSPAN helpers for deeper packet insights.",
       tags: ["SONiC", "eBPF", "Networking"],
     },
     {
       name: "Cosmonic",
       tagline: "Resilient virtual NIC",
-      desc: "Resilient virtual NIC for demanding edge and data‑center deployments. Combines kernel eBPF and DPDK paths for ultra‑low‑latency load balancing, fast failover, and predictable performance.",
+      desc: "Resilient virtual NIC for demanding edge and data-center deployments. Combines kernel eBPF and DPDK paths for ultra-low-latency load balancing, fast failover, and predictable performance.",
       tags: ["DPDK", "eBPF", "Resiliency"],
     },
   ]
@@ -40,8 +40,8 @@ export function Products() {
         DevOps platforms you can run anywhere
       </h2>
       <p className="mt-3 text-muted-foreground max-w-2xl">
-        From multi‑cluster networking to full‑stack observability, each project is built to be cloud‑native, composable,
-        and production‑ready.
+        From multi-cluster networking to full-stack observability, each project is built to be cloud-native, composable,
+        and production-ready.
       </p>
 
       <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">

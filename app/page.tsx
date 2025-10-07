@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-
+import Image from "next/image"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Products } from "@/components/products"
@@ -29,7 +29,14 @@ function HeaderNav() {
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2">
           {/* <div aria-hidden className="h-7 w-7 rounded-md bg-primary" title="PlatformBuilds logo" /> */}
-          <span className="font-bold tracking-tight text-2xl md:text-3xl">PlatformBuilds</span>
+          {/* <span className="font-bold tracking-tight text-2xl md:text-3xl">PlatformBuilds</span> */}
+          <Image
+            src="/typo-logo.png"
+            alt="PlatformBuilds logo"
+            width={280}
+            height={20}
+            className="rounded-md brightness-0 md:brightness-100"
+          />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <a href="#mission" className="hover:underline">

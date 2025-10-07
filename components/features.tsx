@@ -3,16 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export function Features() {
   const items = [
     {
-      title: "Privacy‑first & Airgapped",
-      desc: "Built to operate in disconnected and high‑security environments without compromising capability.",
+      title: "Privacy-first & Airgapped",
+      desc: "Built to operate in disconnected and high-security environments without compromising capability.",
     },
     {
-      title: "CNCF‑aligned Platforms",
-      desc: "Kubernetes‑native foundations and OpenTelemetry throughout—no lock‑in, future‑proof by design.",
+      title: "CNCF-aligned Platforms",
+      desc: "Kubernetes-native foundations and OpenTelemetry throughout—no lock-in, future-proof by design.",
     },
     {
       title: "Programmable & Sustainable",
-      desc: "APIs, automation, and efficient resource usage at scale for real‑world production workloads.",
+      desc: "APIs, automation, and efficient resource usage at scale for real-world production workloads.",
     },
     {
       title: "For Regulated Industries",
@@ -23,10 +23,10 @@ export function Features() {
     <section id="mission" className="mx-auto max-w-6xl px-4 py-16">
       <div className="max-w-2xl">
         <h2 className="text-balance text-2xl md:text-3xl font-semibold tracking-tight">
-          Mission‑driven platforms for modern operators
+          Mission-driven platforms for modern operators
         </h2>
         <p className="mt-3 text-muted-foreground">
-          Our mission is to bridge infrastructure, AI, and observability with open, production‑grade building blocks
+          Our mission is to bridge infrastructure, AI, and observability with open, production-grade building blocks
           that scale and endure.
         </p>
       </div>

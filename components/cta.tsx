@@ -10,7 +10,7 @@ export function CTA() {
             Ready to explore PlatformBuilds?
           </h3>
           <p className="mt-2 text-muted-foreground">
-            Browse the code, try Mirador‑Core, or reach out to discuss enterprise deployment.
+            Browse the code, try Mirador-Core, or reach out to discuss enterprise deployment.
           </p>
         </div>
         <div className="flex gap-3">

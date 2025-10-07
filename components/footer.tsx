@@ -11,7 +11,7 @@ export function Footer() {
             Products
           </a>
           <a href="#mirador" className="hover:underline">
-            Mirador‑Core
+            Mirador-Core
           </a>
           <a href="#cta" className="hover:underline">
             Contact

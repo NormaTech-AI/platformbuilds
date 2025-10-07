@@ -12,7 +12,7 @@ export function Hero() {
             Open platforms that bridge Infrastructure, AI, and Observability
           </h1>
           <p className="text-pretty mt-4 text-muted-foreground">
-            PlatformBuilds delivers CNCF‑aligned, privacy‑first platforms for regulated industries—built to run
+            PlatformBuilds delivers CNCF-aligned, privacy-first platforms for regulated industries—built to run
             airgapped, scale horizontally, and stay programmable.
           </p>
           <div className="mt-6 flex gap-3">
@@ -41,6 +41,9 @@ function Illustration() {
           src="/hero.png"
           alt="DevOps systems diagram showing Kubernetes clusters, CI/CD pipeline, and observability streams (metrics, logs, traces) on a dark navy background with teal accents"
           className="h-full w-full rounded-xl object-contain"
+          width={540}
+          height={540}
+          priority
         />
       </div>
       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-border" aria-hidden />
