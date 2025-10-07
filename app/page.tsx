@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import ContactForm from "@/components/contact-us"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Products } from "@/components/products"
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Features />
       <Products />
       <MiradorHighlight />
+      <ContactForm />
       <CTA />
       <Footer />
     </main>
