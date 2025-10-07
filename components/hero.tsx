@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export function Hero() {
   return (
@@ -36,7 +37,7 @@ function Illustration() {
     <div className="relative">
       <div className="aspect-square w-full rounded-xl border">
         {/* Decorative placeholder graphic */}
-        <img
+        <Image
           src="/hero.png"
           alt="DevOps systems diagram showing Kubernetes clusters, CI/CD pipeline, and observability streams (metrics, logs, traces) on a dark navy background with teal accents"
           className="h-full w-full rounded-xl object-contain"
