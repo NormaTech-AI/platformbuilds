@@ -88,7 +88,6 @@ export async function POST(req: Request) {
     if (!res.ok) {
       const data = await res.json().catch(() => ({}))
       return NextResponse.json({ message: data?.message || "Failed to send email." }, { status: 502 })
-    .json({ message: "Failed to send email." }, { status: 502 })
     }
 
     return NextResponse.json({ ok: true })
