@@ -52,19 +52,31 @@ export function MiradorRCAHighlight() {
         <ul className="mt-3 grid gap-2 md:grid-cols-2 text-sm text-muted-foreground">
           <li className="flex gap-3">
             <span className="mt-1 h-2.5 w-2.5 rounded-full bg-primary" aria-hidden />
-            Topology-aware intelligence that sees cascading failures.
+            <div>
+              <span className="font-semibold">Bridges the gap from Business Impact to Technical Causation</span>
+              &nbsp;by breaking down team silos and correlating data across your entire stack.
+            </div>
           </li>
           <li className="flex gap-3">
             <span className="mt-1 h-2.5 w-2.5 rounded-full bg-primary" aria-hidden />
-            Cross-signal correlation to find the true “smoking gun.”
+            <div>
+              <span className="font-semibold">Finds the "smoking gun"</span>
+              &nbsp;with topology-aware intelligence that understands cascading failures.
+            </div>
           </li>
           <li className="flex gap-3">
             <span className="mt-1 h-2.5 w-2.5 rounded-full bg-primary" aria-hidden />
-            AI-driven insights that get better with your history.
+            <div>
+              <span className="font-semibold">Delivers AI-driven insights</span>
+              &nbsp;that continuously learn from your system's history to improve accuracy.
+            </div>
           </li>
           <li className="flex gap-3">
             <span className="mt-1 h-2.5 w-2.5 rounded-full bg-primary" aria-hidden />
-            “Sonic” speed—comprehensive RCA typically under 4 seconds.
+            <div>
+              <span className="font-semibold">Enables rapid incident response</span>
+              &nbsp;with high-speed, comprehensive root cause analysis.
+            </div>
           </li>
         </ul>
       </div>
