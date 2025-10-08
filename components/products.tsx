@@ -15,18 +15,18 @@ export function Products() {
       desc: "Unifies Kubernetes and bare-metal networks with policy-based BGP routing and multi-cluster overlays. Built for high-throughput, low-latency workloads in regulated and on-prem environments.",
       tags: ["Networking", "Kubernetes", "BGP"],
     },
-    {
-      name: "Telegen",
-      tagline: "One agent, many signals",
-      desc: "Lightweight eBPF agent capturing system, process, and network signals with near-zero overhead. Exposes Prometheus and OTLP for drop-in integration with existing observability and security pipelines.",
-      tags: ["eBPF", "Agent", "OTLP"],
-    },
-    {
-      name: "Telegen-Sonic",
-      tagline: "Observability for SONiC NOS",
-      desc: "Targeted observability for SONiC using eBPF tc-ingress hooks. Streams enriched flow data over OTLP, with optional ERSPAN helpers for deeper packet insights.",
-      tags: ["SONiC", "eBPF", "Networking"],
-    },
+    // {
+    //   name: "Telegen",
+    //   tagline: "One agent, many signals",
+    //   desc: "Lightweight eBPF agent capturing system, process, and network signals with near-zero overhead. Exposes Prometheus and OTLP for drop-in integration with existing observability and security pipelines.",
+    //   tags: ["eBPF", "Agent", "OTLP"],
+    // },
+    // {
+    //   name: "Telegen-Sonic",
+    //   tagline: "Observability for SONiC NOS",
+    //   desc: "Targeted observability for SONiC using eBPF tc-ingress hooks. Streams enriched flow data over OTLP, with optional ERSPAN helpers for deeper packet insights.",
+    //   tags: ["SONiC", "eBPF", "Networking"],
+    // },
     {
       name: "Cosmonic",
       tagline: "Resilient virtual NIC",

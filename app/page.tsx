@@ -3,12 +3,16 @@ import Link from "next/link"
 import Image from "next/image"
 import ContactForm from "@/components/contact-us"
 import CollaborationSection from "@/components/collaboration"
+import FlagshipPlatforms from "@/components/flagship-platforms"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Products } from "@/components/products"
 import { MiradorHighlight } from "@/components/mirador-highlight"
+import { MiradorRCAHighlight } from "@/components/mirador-rca"
 import { CTA } from "@/components/cta"
 import { Footer } from "@/components/footer"
+import MiradorStackFeatures from "@/components/mircador-stack-features"
+import { CosmoStackSection } from "@/components/cosmo-stack"
 
 export default function HomePage() {
   return (
@@ -17,8 +21,12 @@ export default function HomePage() {
       <Hero />
       <TrustedBadges />
       <Features />
-      <Products />
+      <FlagshipPlatforms />
+      {/* <Products /> */}
+      <MiradorStackFeatures/>
       <MiradorHighlight />
+      <MiradorRCAHighlight />
+      <CosmoStackSection />
       <CollaborationSection />
       <ContactForm />
       <CTA />
@@ -46,11 +54,17 @@ function HeaderNav() {
           <a href="#mission" className="hover:underline">
             Mission
           </a>
-          <a href="#products" className="hover:underline">
+          <a href="#flagships" className="hover:underline">
             Products
           </a>
-          <a href="#mirador" className="hover:underline">
+          {/* <a href="#mirador" className="hover:underline">
             Mirador-Core
+          </a> */}
+          <a href="#mirador-features" className="hover:underline">
+            Mirador
+          </a>
+          <a href="#cosmo-features" className="hover:underline">
+            Cosmo
           </a>
           <a href="#contact-us" className="hover:underline">
             Contact

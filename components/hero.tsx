@@ -17,7 +17,7 @@ export function Hero() {
           </p>
           <div className="mt-6 flex gap-3">
             <Button asChild>
-              <Link href="#products">Explore Products</Link>
+              <Link href="#flagships">Explore Products</Link>
             </Button>
             <Button asChild variant="outline">
               <Link href="https://github.com/PlatformBuilds" target="_blank" rel="noreferrer noopener">

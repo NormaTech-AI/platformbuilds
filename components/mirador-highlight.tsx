@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export function MiradorHighlight() {
   return (
-    <section id="mirador" className="mx-auto max-w-6xl px-4 py-16 pt-24">
+    <section id="mirador" className="mx-auto max-w-6xl px-4 py-16 -mt-15">
       <div className="max-w-2xl">
         <h2 className="text-balance text-2xl md:text-3xl font-semibold tracking-tight">
           Mirador-Core — AI-powered observability backbone
