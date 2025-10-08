@@ -2,10 +2,11 @@ import { NextResponse } from "next/server"
 
 export async function POST(req: Request) {
   try {
-    const { name, company, query } = (await req.json()) as {
+    const { name, company, query, recaptchaToken } = (await req.json()) as {
       name?: string
       company?: string
       query?: string
+      recaptchaToken?: string
     }
 
     const n = (name || "").trim()
@@ -16,12 +17,32 @@ export async function POST(req: Request) {
       return NextResponse.json({ message: "All fields are required." }, { status: 400 })
     }
 
+    if (!recaptchaToken) {
+      return NextResponse.json({ message: "reCAPTCHA token is missing." }, { status: 400 })
+    }
+
+    const recaptchaSecretKey = process.env.RECAPTCHA_SECRET_KEY
+    if (!recaptchaSecretKey) {
+      return NextResponse.json({ message: "reCAPTCHA is not configured." }, { status: 500 })
+    }
+
+    const verificationResponse = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `secret=${recaptchaSecretKey}&response=${recaptchaToken}`,
+    })
+
+    const verificationData = await verificationResponse.json()
+    if (!verificationData.success) {
+      return NextResponse.json({ message: "reCAPTCHA verification failed." }, { status: 400 })
+    }
+
     const apiKey = process.env.RESEND_API_KEY
     if (!apiKey) {
       return NextResponse.json({ message: "Email service is not configured." }, { status: 500 })
     }
 
-    const to = [process.env.CONTACT_TO || "info@consultrnr.com", "rv@platformbuilds.org"]
+    const to = [process.env.CONTACT_TO || "info@consultrnr.com", "sapatesanket09@gmail.com"]
     const from = process.env.CONTACT_FROM || "no-reply@platformbuilds.local"
 
     // Compose email content
@@ -67,6 +88,7 @@ export async function POST(req: Request) {
     if (!res.ok) {
       const data = await res.json().catch(() => ({}))
       return NextResponse.json({ message: data?.message || "Failed to send email." }, { status: 502 })
+    .json({ message: "Failed to send email." }, { status: 502 })
     }
 
     return NextResponse.json({ ok: true })

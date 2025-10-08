@@ -48,6 +48,7 @@ function HeaderNav() {
             width={280}
             height={20}
             className="rounded-md brightness-0 md:brightness-100"
+            priority
           />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
