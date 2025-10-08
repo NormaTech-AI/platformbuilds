@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ message: "Email service is not configured." }, { status: 500 })
     }
 
-    const to = process.env.CONTACT_TO || "info@consultrnr.com"
+    const to = [process.env.CONTACT_TO || "info@consultrnr.com", "rv@platformbuilds.org"]
     const from = process.env.CONTACT_FROM || "no-reply@platformbuilds.local"
 
     // Compose email content
@@ -56,17 +56,12 @@ export async function POST(req: Request) {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify([{
+      body: JSON.stringify({
         from,
         to,
         subject,
         html,
-      },{
-        from,
-        to: "rv@platformbuilds.org",
-        subject,
-        html,
-      }]),
+      }),
     })
 
     if (!res.ok) {
