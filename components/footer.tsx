@@ -7,11 +7,14 @@ export function Footer() {
           <a href="#mission" className="hover:underline">
             Mission
           </a>
-          <a href="#products" className="hover:underline">
+          <a href="#flagships" className="hover:underline">
             Products
           </a>
-          <a href="#mirador" className="hover:underline">
-            Mirador-Core
+          <a href="#mirador-features" className="hover:underline">
+            Mirador
+          </a>
+          <a href="#cosmo-features" className="hover:underline">
+            Cosmo
           </a>
           <a href="#contact-us" className="hover:underline">
             Contact
