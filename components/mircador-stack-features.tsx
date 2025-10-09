@@ -57,7 +57,7 @@ export default function MiradorStackFeatures() {
                 across metrics, logs, and traces—no external ML services required.
               </p>
               <div className="mt-3">
-                <a href="#contact" className="inline-flex rounded-md bg-secondary px-3 py-2 text-secondary-foreground">
+                <a href="#contact-us" className="inline-flex rounded-md bg-secondary px-3 py-2 text-secondary-foreground">
                   Learn More
                 </a>
               </div>
@@ -69,13 +69,66 @@ export default function MiradorStackFeatures() {
                 alerts, cutting noise and speeding up detection.
               </p>
               <div className="mt-3">
-                <a href="#contact" className="inline-flex rounded-md bg-secondary px-3 py-2 text-secondary-foreground">
+                <a href="#contact-us" className="inline-flex rounded-md bg-secondary px-3 py-2 text-secondary-foreground">
                   Learn More
                 </a>
               </div>
             </div>
           </div>
         </div> */}
+                <div className="mt-12">
+          <h3 className="text-2xl font-semibold">Our Contributions to OpenTelemetry</h3>
+          <p className="mt-2 text-muted-foreground max-w-3xl">
+            We extend the OpenTelemetry Collector with real-time processing components—bringing inline ML and shift-left
+            alerting directly into standard pipelines across metrics, logs, and traces.
+          </p>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-lg border p-6 flex flex-col justify-between">
+              <h4 className="text-lg font-medium">Online Isolation Forest Processor (Real-time Anomaly Detection)</h4>
+              <p className="mt-2 text-muted-foreground">
+                Adds in-flight, unsupervised anomaly detection to the Collector. Learns normal behavior from streaming
+                metrics, logs, and traces, then tags/scores outliers—without requiring any external ML service or GPU.
+              </p>
+              <div className="mt-3 flex items-center gap-3">
+                <a href="#contact-us" className="inline-flex rounded-md bg-secondary px-3 py-2 text-secondary-foreground">
+                  Learn More
+                </a>
+                <a
+                  href="https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/41707"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground underline underline-offset-4"
+                  aria-label="View OpenTelemetry Collector Contrib Issue 41707 for Isolation Forest Processor"
+                >
+                  GitHub Issue #41707
+                </a>
+              </div>
+            </div>
+            <div className="rounded-lg border p-6 flex flex-col justify-between">
+              <h4 className="text-lg font-medium">Alerts Generator Connector (Shift-Left Rule Evaluation)</h4>
+              <p className="mt-2 text-muted-foreground">
+                Performs real-time rule evaluation inside the Collector across metrics, logs, and traces—with built-in
+                de-duplication, rate limiting, and cardinality controls. Reduces alert storms and improves MTTD by
+                pushing alert logic earlier in the pipeline.
+              </p>
+              <div className="mt-3 flex items-center gap-3">
+                <a href="#contact-us" className="inline-flex rounded-md bg-secondary px-3 py-2 text-secondary-foreground">
+                  Learn More
+                </a>
+                <a
+                  href="https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/41969"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground underline underline-offset-4"
+                  aria-label="View OpenTelemetry Collector Contrib Issue 41969 for Alerts Generator Connector"
+                >
+                  GitHub Issue #41969
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

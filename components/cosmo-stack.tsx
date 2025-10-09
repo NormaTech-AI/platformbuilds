@@ -32,21 +32,21 @@ export function CosmoStackSection() {
           />
           <Feature
             title="Declarative & agile"
-            desc="Manage your network with simple, declarative APIs—aligning network operations with the same patterns used for cloud‑native apps."
+            desc="Manage your network with simple, declarative APIs—aligning network operations with the same patterns used for cloud-native apps."
           />
           <Feature
-            title="High‑performance ready"
-            desc="Built for demanding workloads—including AI/ML clusters, HPC, and large‑scale data services—with a focus on throughput and reliability."
+            title="High-performance ready"
+            desc="Built for demanding workloads—including AI/ML clusters, HPC, and large-scale data services—with a focus on throughput and reliability."
           />
         </div>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
           {/* Replace href with the announcement blog URL when available. */}
           <Button asChild>
-            <Link href="#contact">Read the announcement</Link>
+            <Link href="#contact-us">Read the announcement</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="#contact">Talk to us</Link>
+            <Link href="#contact-us">Talk to us</Link>
           </Button>
         </div>
       </div>
